@@ -1,0 +1,12 @@
+import { resolve } from 'path';
+import type { UserConfig } from 'vite';
+
+export default {
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'src/routes/+page.svelte')
+      }
+    }
+  }
+} satisfies UserConfig;
